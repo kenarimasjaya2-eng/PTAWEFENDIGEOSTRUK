@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, Mail, MapPin, Blueprint, Home, Building, Ruler, Eye, Monitor, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, PenTool, Home, Building, Ruler, Eye, Monitor, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -19,7 +19,7 @@ export default function Services() {
 
   const services = [
     {
-      icon: <Blueprint className="w-8 h-8" />,
+      icon: <PenTool className="w-8 h-8" />,
       title: "Konsep Desain",
       description: "Pengembangan konsep arsitektur yang kreatif dan inovatif sesuai kebutuhan klien",
       features: [
@@ -283,7 +283,7 @@ export default function Services() {
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Blueprint className="w-12 h-12 text-white" />
+                    <PenTool className="w-12 h-12 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-blue-900 mb-2">Solusi Lengkap</h3>
                   <p className="text-gray-600">Dari konsep hingga realisasi</p>

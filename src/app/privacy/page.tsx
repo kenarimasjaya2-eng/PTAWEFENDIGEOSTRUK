@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Shield, Eye, Database, UserRights, Cookie, Lock } from 'lucide-react';
+import { Menu, X, Shield, Eye, Database, UserCheck, Cookie, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -122,7 +122,7 @@ export default function Privacy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <Card className="p-6">
                   <div className="flex items-start gap-4">
-                    <UserRights className="w-8 h-8 text-yellow-600 flex-shrink-0 mt-1" />
+                    <UserCheck className="w-8 h-8 text-yellow-600 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-xl font-semibold text-blue-900 mb-3">Data yang Diberikan Secara Sukarela</h3>
                       <ul className="text-gray-600 space-y-2">
@@ -306,7 +306,7 @@ export default function Privacy() {
                     description: "Hak untuk memperbaiki data pribadi yang tidak akurat atau tidak lengkap."
                   },
                   {
-                    icon: <UserRights className="w-6 h-6" />,
+                    icon: <UserCheck className="w-6 h-6" />,
                     title: "Hak Penghapusan",
                     description: "Hak untuk meminta penghapusan data pribadi Anda dalam kondisi tertentu."
                   },
